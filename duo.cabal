@@ -1,20 +1,25 @@
 name:                duo
 version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/duo#readme
-license:             BSD3
+synopsis:            Practice workspace for learning haskell
+description:         Testing and Breaking everyting
+-- homepage:            https://github.com/githubuser/duo#readme
+license:             MIT
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2020 Author name here
-category:            Web
+author:              Gabri Botha
+maintainer:          angelodeath@outlook.com
+copyright:           2020, Gabri Botha
+category:            CLI
 build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
 
 executable duo
+  ghc-options:         -Wall
   hs-source-dirs:      src
   main-is:             Main.hs
+  build-depends:       base >= 4.7 && <5,
+                       bytestring,
+                       vector,
+                       cassava
   default-language:    Haskell2010
-  build-depends:       base >= 4.7 && < 5
+
